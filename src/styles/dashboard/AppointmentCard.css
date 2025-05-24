@@ -1,0 +1,62 @@
+.appointment-card {
+  background-color: var(--card-background);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-md);
+  min-width: 240px;
+  flex: 1;
+  display: flex;
+  gap: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.appointment-card.primary {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.appointment-card.secondary {
+  background-color: var(--highlight-color);
+  color: var(--text-primary);
+}
+
+.appointment-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.appointment-card.secondary .appointment-icon {
+  background-color: white;
+  color: var(--primary-color);
+}
+
+.appointment-details {
+  flex: 1;
+}
+
+.appointment-type {
+  font-weight: 600;
+  margin-bottom: var(--spacing-xs);
+  font-size: var(--font-size-md);
+}
+
+.appointment-time {
+  font-weight: 500;
+  margin-bottom: var(--spacing-xs);
+  font-size: var(--font-size-sm);
+}
+
+.appointment-doctor {
+  font-size: var(--font-size-sm);
+  opacity: 0.8;
+}
+
+@media (max-width: 1280px) {
+  .appointment-card {
+    min-width: 220px;
+  }
+}

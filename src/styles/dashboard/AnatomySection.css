@@ -1,0 +1,96 @@
+.anatomy-section {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  height: 450px;
+}
+
+.anatomy-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.body-image {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.body-image img {
+  height: 100%;
+  max-height: 350px;
+  object-fit: contain;
+}
+
+.body-indicator {
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.indicator-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: var(--secondary-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+}
+
+.body-indicator.good .indicator-dot {
+  background-color: var(--primary-color);
+}
+
+.indicator-label {
+  position: absolute;
+  white-space: nowrap;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--border-radius-sm);
+  font-size: var(--font-size-xs);
+  transform: translateY(-100%);
+  top: -8px;
+}
+
+.body-indicator.good .indicator-label {
+  background-color: var(--primary-color);}
+
+.anatomy-slider {
+  padding: var(--spacing-md) 0;
+}
+
+.slider-track {
+  height: 4px;
+  background-color: var(--border-color);
+  border-radius: 2px;
+  position: relative;
+}
+
+.slider-thumb {
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.anatomy-footer {
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--border-color);
+}
+
+@media (max-width: 768px) {
+  .anatomy-section {
+    height: 400px;
+  }
+}

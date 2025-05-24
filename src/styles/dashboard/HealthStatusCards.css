@@ -1,0 +1,89 @@
+.health-status-container {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+.health-status-card {
+  padding: var(--spacing-md);
+  background-color: rgb(223, 226, 246);
+}
+
+.health-status-header {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  margin-bottom: var(--spacing-sm);
+}
+
+.health-icon {
+  width: 40px;
+  height: 40px;
+  /* border-radius: 50%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.health-icon.good {
+  /* background-color: rgba(16, 185, 129, 0.1); */
+  color: whitesmoke;
+}
+.health-icon.bones {
+  /* background-color: rgba(16, 185, 129, 0.1); */
+  color: whitesmoke;
+}
+
+.health-icon.warning {
+  /* background-color: rgba(245, 158, 11, 0.1); */
+  color: rgb(241, 48, 81);
+}
+
+.health-title {
+  font-weight: 600;
+  font-size: var(--font-size-md);
+}
+
+.health-date {
+  color: var(--text-secondary);
+  /* font-size: var(--font-size-sm); */
+  font-size: 10px;
+  opacity: 0.8;
+  margin-bottom: var(--spacing-md);
+}
+
+.health-progress {
+  margin-top: var(--spacing-sm);
+}
+
+.progress-bar {
+  height: 6px;
+  background-color: var(--border-color);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.progress-fill.good {
+  background-color: var(--success-color);
+}
+
+.progress-fill.warning {
+  background-color: rgb(255, 106, 131);
+}
+
+.progress-fill.bones {
+  background-color: orange;
+}
+
+
+@media (max-width: 1024px) {
+  .health-status-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
