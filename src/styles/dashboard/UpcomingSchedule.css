@@ -1,5 +1,6 @@
 .upcoming-schedule {
   padding: var(--spacing-lg);
+  /* background-color: rgb(207, 213, 246) */
 }
 
 .schedule-title {
@@ -21,21 +22,28 @@
 
 .schedule-items {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: var(--spacing-md);
 }
 
 .simple-appointment-card {
-  background-color: var(--highlight-color);
-  border-radius: var(--border-radius-md);
-  padding: var(--spacing-md);
+  background-color: rgb(182, 193, 255);
+  color: rgb(48, 48, 102);
+  /* background-color: var(--highlight-color); */
+  border-radius: var(--border-radius-xl);
+  padding: var(--spacing-md) var(--spacing-lg);
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
 }
 
 .simple-appointment-details {
-  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  /* flex: 1; */
 }
 
 .simple-appointment-title {
@@ -53,7 +61,7 @@
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: white;
+  /* background-color: white; */
   display: flex;
   align-items: center;
   justify-content: center;

@@ -42,7 +42,7 @@
 }
 
 .day-column {
-  min-width: 60px;
+  /* min-width: 60px; */
   flex: 1;
 }
 
@@ -90,9 +90,15 @@
 }
 
 .time-slot.booked {
-  background-color: var(--highlight-color);
-  color: var(--primary-color);
+  /* background-color: var(--highlight-color); */
+  /* color: var(--primary-color); */
+  background-color: rgb(48, 48, 102);
+  border-radius: 1rem;
+  color: white;
   font-weight: 500;
+}
+.icon-plus {
+  transform: scale(1.5);
 }
 
 @media (max-width: 1024px) {

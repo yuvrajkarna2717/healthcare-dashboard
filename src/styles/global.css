@@ -40,10 +40,11 @@ img {
 }
 
 .card {
-  background-color: var(--card-background);
-  border-radius: var(--border-radius-md);
+  /* background-color: rgb(213, 218, 255); */
+  /* background-color: var(--card-background); */
+  border-radius: var(--border-radius-xl);
   box-shadow: var(--shadow-sm);
-  padding: var(--spacing-lg);
+  padding: var(--spacing-md);
 }
 
 .sr-only {

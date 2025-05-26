@@ -21,7 +21,7 @@ function App() {
       <div className="dashboard">
         <div className="dashboard-content">
           <div
-            style={{ display: "flex", flexDirection: "column", gap: "2rem" }}
+            style={{ display: "flex", flexDirection: "column"}}
           >
             <Header />
             <h1 className="dashboard-title">Dashboard</h1>

@@ -2,7 +2,7 @@
   background-color: var(--card-background);
   border-radius: var(--border-radius-lg);
   padding: var(--spacing-md);
-  min-width: 240px;
+  /* min-width: 240px; */
   flex: 1;
   display: flex;
   gap: var(--spacing-md);
@@ -10,13 +10,13 @@
 }
 
 .appointment-card.primary {
-  background-color: var(--secondary-color);
+  background-color: rgb(48, 48, 102);
   color: white;
 }
 
 .appointment-card.secondary {
-  background-color: var(--highlight-color);
-  color: var(--text-primary);
+  background-color: rgb(182, 193, 255);
+  color: rgb(48, 48, 102);
 }
 
 .appointment-icon {
