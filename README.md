@@ -1,12 +1,42 @@
-# React + Vite
+# 🩺 HealthCare Dashboard - React Application
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a modern, responsive **HealthCare Dashboard** built using React. It provides interactive components such as patient insights, anatomy visualization, notifications, and more. Designed to be clean, responsive, and scalable.
 
-Currently, two official plugins are available:
+## ✅ Assignment Completion Checklist
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 📌 1. Project Development
+- Built using **React + Vite**.
+- Modular structure with reusable components.
+- Lazy-loaded components and optimized assets.
+- CSS handled with custom variables and responsive design.
 
-## Expanding the ESLint configuration
+### 📌 2. Remote Git Repository
+- Created a public GitHub repository (link below).
+- Resume excluded from the repo; it resides in a separate folder named `Resume/`.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 📌 3. Code Pushed to Remote Repository
+- Added remote using `git remote add origin`.
+- Code pushed using `git push -u origin main`.
+
+### 📌 4. Hosting & Deployment
+- **Deployed on Render** for fast and reliable delivery.
+- Automatic CI/CD configured to redeploy on commit.
+
+---
+
+## 🚀 Live Demo
+
+🔗 **Live URL**: [https://healthcare-dashboard-zzn3.onrender.com](https://healthcare-dashboard-zzn3.onrender.com)  
+🔗 **GitHub Repo**: [https://github.com/yuvrajkarna2717/healthcare-dashboard](https://github.com/yuvrajkarna2717/healthcare-dashboard)
+
+---
+
+
+## 👤 Author
+
+**Yuvraj Karna**  
+🔗 [LinkedIn](https://www.linkedin.com/in/yuvrajkarna27)  
+
+---
+
+> 💡 Note: The `Resume/` folder contains my resume.

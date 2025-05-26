@@ -1,5 +1,9 @@
+import { lazy, Suspense } from "react";
 import Layout from "./components/layout/Layout";
-import AnatomySection from "./components/dashboard/AnatomySection";
+const AnatomySection = lazy(() =>
+  import("./components/dashboard/AnatomySection")
+);
+// import AnatomySection from "./components/dashboard/AnatomySection";
 import HealthStatusCards from "./components/dashboard/HealthStatusCards";
 import CalendarView from "./components/dashboard/CalendarView";
 import UpcomingSchedule from "./components/dashboard/UpcomingSchedule";
@@ -20,13 +24,13 @@ function App() {
     <Layout>
       <div className="dashboard">
         <div className="dashboard-content">
-          <div
-            style={{ display: "flex", flexDirection: "column"}}
-          >
+          <div style={{ display: "flex", flexDirection: "column" }}>
             <Header />
             <h1 className="dashboard-title">Dashboard</h1>
             <div className="dashboard-main">
-              <AnatomySection bodyParts={bodyParts} />
+              <Suspense fallback={<div>Loading Anatomy...</div>}>
+                <AnatomySection bodyParts={bodyParts} />
+              </Suspense>
               <HealthStatusCards healthData={healthData} />
             </div>
             <div>
